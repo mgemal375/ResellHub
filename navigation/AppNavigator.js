@@ -21,7 +21,7 @@ export default function AppNavigator() {
 
   return (
     <NavigationContainer>
-      {user ? <AppStack /> : <AuthStack />}
+      {user ? <AppStack initialRouteName="Home" /> : <AuthStack />}
     </NavigationContainer>
   );
 }
